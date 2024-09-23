@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "tw": "npx tailwindcss -i ./style.css -o ./assets/theme.css --watch",
+    "prettier": "prettier"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13"
+  }
+}
