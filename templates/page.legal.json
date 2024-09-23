@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".h0 {font-weight: 700; font-size: 48px;}",
+        ".shopify-policy__title {text-align: left;}",
+        ".shopify-policy__title h1 {font-weight: 700; font-size: 48px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "custom_liquid_9NBBx9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"container-text\">\n  <h2 class=\"section-title text-center scroll-trigger animate--slide-in\"><strong>LEGAL<\/strong><\/h2>\n  <p class=\"section-paragraph text-center\">\n    Lorem ipsum dolor sit amet consectetur. Amet in vulputate blandit suspendisse.<br> \n    Eget suspendisse id est eget sed sapien. Consectetur ullamcorper \n  <\/p>\n<\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 84,
+        "padding_bottom": 4
+      }
+    },
+    "custom_liquid_ERjBTy": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"container-legal-card\">\n  <div class=\"wrapper-legal-card\">\n    <div class=\"legal-card no-padding-top\">\n      <div class=\"icon\">\n        <img\n          src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/Group_13427.png?v=1724749983\"\n          alt=\"Privacy Icon\"\n        >\n      <\/div>\n      <h3>Privacy<\/h3>\n    <\/div>\n    <div class=\"legal-card center no-padding-top\">\n      <div class=\"icon\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/Group_13428.png?v=1724749984\" alt=\"Terms Icon\">\n      <\/div>\n      <h3>Terms<\/h3>\n    <\/div>\n    <div class=\"legal-card no-padding-top\">\n      <div class=\"icon\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/Group_13429.png?v=1724749983\" alt=\"EULA Icon\">\n      <\/div>\n      <h3>EULA<\/h3>\n    <\/div>\n  <\/div>\n<\/div>\n<hr>\n<div class=\"container-legal-card\">\n  <div class=\"wrapper-legal-card\">\n    <div class=\"legal-card bottom-section\">\n      <div class=\"icon\">\n        <img\n          src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/Group_13422.png?v=1724749983\"\n          alt=\"Cookies Icon\"\n        >\n      <\/div>\n      <h3>Cookies<\/h3>\n    <\/div>\n    <div class=\"legal-card center bottom-section\">\n      <div class=\"icon\">\n        <img\n          src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/Group_13425.png?v=1724749983\"\n          alt=\"Shipping Icon\"\n        >\n      <\/div>\n      <h3>Shipping<\/h3>\n    <\/div>\n    <div class=\"legal-card bottom-section\">\n      <div class=\"icon\">\n        <img\n          src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/Group_13426.png?v=1724749983\"\n          alt=\"Disclaimer Icon\"\n        >\n      <\/div>\n      <h3>Disclaimer<\/h3>\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_9NBBx9",
+    "custom_liquid_ERjBTy"
+  ]
+}

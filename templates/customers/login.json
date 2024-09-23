@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "rich_text_VF6Ghg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hNBzTx": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Melde dich bei deinem Konto an<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_8RrnJJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Damit es beim Check-out noch schneller geht und du deine Bücher so schnell wie möglich bei dir hast.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hNBzTx",
+        "text_8RrnJJ"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 76,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-login",
+      "custom_css": [
+        "#login {display: none;}",
+        "td {border: none;}",
+        ".bg-white {background-color: #ffffff;}",
+        "label {display: block; width: 90%; text-align: left;}"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_GFJApp": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_feRFbE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Zahlungsoptionen gibt es?",
+            "icon": "none",
+            "row_content": "<p>Wir bieten aktuell folgende Zahlungsoptionen an: Mastercard, Maestro, Visa und Twint.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qiRrUQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie erhalte ich meine Rechnung?",
+            "icon": "none",
+            "row_content": "<p>Deine Rechnungsübersicht erhältst du zusammen mit der Bestellbestätigung per E-Mail.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fpYJY4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wohin verschickt ihr eure Produkte?",
+            "icon": "none",
+            "row_content": "<p>Wir liefern aktuell nach Deutschland und Österreich.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6faWdj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wann wird meine Bestellung verschickt?",
+            "icon": "none",
+            "row_content": "<p>Bücher werden in der Regel 2 Werktage nach Bestelleingang verschickt.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_knBKCY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wann kommt die Bestellung bei mir an?",
+            "icon": "none",
+            "row_content": "<p>Nach Versand deiner Bestellung, kommt die Lieferung in der Regel je nach Standort in folgender Zeitspanne bei dir an:<\/p><ul><li>Deutschland: 1-2 Werktage<\/li><li>Österreich: 2-4 Werktage<\/li><\/ul><p>Es ist immer wieder möglich, dass es beim Versanddienstleiter zu Verzögerung kommt und liegt leider nicht in unserer Kontrolle. Die oben angegebenen Werte dienen lediglich zur Orientierung und bieten keine Garantie.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fBrVBA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ich habe meine Bestellung nicht erhalten.",
+            "icon": "none",
+            "row_content": "<p>Wenn deine Bestellung nicht bei dir angekommen ist, melde dich bitte mit deiner Bestellnummer unter<br\/><a href=\"mailto:support@thepoetics.de\" target=\"_blank\">support@thepoetics.de<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LEqBaH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich Produkte zurückschicken?",
+            "icon": "none",
+            "row_content": "<p>Wenn du ein Produkt zurückschicken willst, melde dich bitte innerhalb von 14 Tagen ab dem Bestelldatum mit deiner Bestellnummer und Nennung des Produkts unter<br\/><a href=\"mailto:support@thepoetics.de\" target=\"_blank\">support@thepoetics.de<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UQWmrp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Meine Produkte sind beschädigt angekommen.",
+            "icon": "none",
+            "row_content": "<p>Wenn du beschädigte Produkte erhalten hast, melde dich bitte mit deiner Bestellnummer und Fotos des betroffenen Produkts unter<a href=\"mailto:support@thepoetics.de\" target=\"_blank\"><br\/>support@thepoetics.de<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bUhhTX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ich habe Interesse an einer Großbestellung.",
+            "icon": "none",
+            "row_content": "<p>Bei Interesse an größeren Mengen, melde dich bitte unter<br\/><a href=\"mailto:wholesale@thepoetics.de\" target=\"_blank\">wholesale@thepoetics.de<\/a>.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_feRFbE",
+        "collapsible_row_qiRrUQ",
+        "collapsible_row_fpYJY4",
+        "collapsible_row_6faWdj",
+        "collapsible_row_knBKCY",
+        "collapsible_row_fBrVBA",
+        "collapsible_row_LEqBaH",
+        "collapsible_row_UQWmrp",
+        "collapsible_row_bUhhTX"
+      ],
+      "custom_css": [
+        ".grid__item {padding: 0;}",
+        ".accordion {border: 0; margin: 8px 0;}",
+        ".accordion summary {padding: 16px 32px; background-color: #f5f5f5;}",
+        ".accordion__title {font-size: 18px; font-weight: 700;}",
+        ".accordion__content {color: #686868; font-size: 18px; font-weight: 500; line-height: 28px; padding: 24px 70px 24px 32px;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "<strong>Hilfe & Fragen<\/strong>",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "background-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "rich_text_VF6Ghg",
+    "main",
+    "collapsible_content_GFJApp"
+  ]
+}

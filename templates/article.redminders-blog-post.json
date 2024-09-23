@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "custom_liquid_WgRk3t": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "ol li:nth-child(odd) {background-color: #f8f8f8;}",
+        "ol li {font-weight: 700; padding: 10px 10px;}",
+        "ol {margin: 52px 0 104px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"redminder container-blog-post flex-container flex-center\">\n  <div class=\"wrapper\">\n    <div class=\"blog-image\">\n      <img src=\"{{ article.image | image_url }}\">\n    <\/div>\n    <div class=\"wrapper-content\">\n      <label class=\"letter-tag red\"> GUIDE <\/label>\n      <h3>\n        {{ article.title | escape }}\n      <\/h3>\n      <p class=\"section-paragraph\">\n        {{ article.content }}\n      <\/p>\n      <div class=\"flex-container flex-center\">\n        <a href=\"#\" class=\"no-decoration share-button\">\n          <span class=\"share-icon\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0784\/5661\/9345\/files\/share-black.svg?v=1726218415\" alt=\"Share\">\n          <\/span>\n          Share\n        <\/a>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_WgRk3t"
+  ]
+}

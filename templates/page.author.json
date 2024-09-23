@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".h0 {font-weight: 700; font-size: 48px;}",
+        ".shopify-policy__title {text-align: left;}",
+        ".shopify-policy__title h1 {font-weight: 700; font-size: 48px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_QL6Y6y": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kPagJL": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Liste der Autoren<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_4TgjMt": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Finden Sie hier talentierte Autoren, die bereit sind, ihre einzigartigen Geschichten zu teilen<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kPagJL",
+        "text_4TgjMt"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_wLJ4AW": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".card__information {text-align: center;}",
+        ".card {background: #fff;}",
+        ".vendor-img {padding: 0; object-fit: contain;}",
+        ".social-media {margin-top: 1rem;}",
+        ".total-book {margin-top: 0; margin-bottom: 0; font-size: 1.5rem; font-weight: 100;}",
+        ".author-name {margin-bottom: 0.5rem;}",
+        ".no-gap {column-gap: 0;}",
+        ".author-image {padding: 0; height: 100%; width: 100%;}",
+        ".author-desc {padding-top: 0 !important;}",
+        ".grid-profile {padding: 0;}",
+        ".flex-center {align-items: center; justify-content: center;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"collection page-width\">\n    <ul class=\"grid product-grid grid--2-col-tablet-down grid--3-col-desktop no-gap flex-center\"> \n    {%- for product_vendor in shop.vendors -%} \n        <li class=\"grid__item scroll-trigger animate--slide-in grid-profile\" data-cascade=\"\" style=\"--animation-order: 1;\">\n        <div class=\"card-wrapper product-card-wrapper underline-links-hover\"> \n        {% assign productCount = 0 %}\n        {% for product in collections.all.products %}\n            {% if product.vendor == product_vendor %}\n              {% assign productCount = productCount | plus: 1 %}\n            {% endif %}\n        {% endfor %}\n        {%- assign vendor_img = product_vendor | append: '.png' | downcase -%} \n        {%- assign vendor_link = 'https:\/\/thepoetics.de\/collections\/vendors?q=' | append: product_vendor -%} \n        {%- assign arr_facebook = \"Naiad,Shreya Maurya\" | split: ',' -%} \n        {%- assign arr_x = \"Roos,Evenfall,Lorelei,Shreya Maurya\" | split: ',' -%} \n        {%- assign arr_instagram = \"Roos,Naiad,Evenfall,Lorelei\" | split: ',' -%} \n        <div class=\"card card--card card--media color-background-2 gradient\" style=\"--ratio-percent: 125.0%;\">\n            <div class=\"card__inner\" style=\"--ratio-percent: 125.0%;\">\n              <div class=\"card__media\">\n                <div class=\"vendor-img\">\n                    <a href=\"{{ vendor_link }}\" class=\"full-unstyled-link caption-author\">\n                        <img class=\"author-image\" src=\"{{ vendor_img | asset_url }}\" width=\"400\" height=\"308\">\n                    <\/a>\n                <\/div>\n              <\/div>\n            <\/div>\n            <div class=\"card__content author-desc\">\n                <div class=\"card__information\">\n                  <h3 class=\"card__heading author-name\">\n                    <a href=\"{{ vendor_link }}\" class=\"full-unstyled-link caption-author\">\n                      <strong>{{ product_vendor }}<\/strong>\n                    <\/a>\n                  <\/h3>\n                  \n                  <div class=\"card-information\">\n                    <div class=\"light\">\n                        <h5 class=\"total-book\">{{ productCount }} BUCH<\/h5>\n                    <\/div>\n                    <span class=\"caption-large light\"><\/span>\n                    {% comment %}\n                    <div class=\"price social-media\">\n                        <div class=\"price__container\">\n                            <ul class=\"list-unstyled list-social footer__list-social\" role=\"list\"><li class=\"list-social__item\">\n                                {%- if arr_instagram contains product_vendor -%}\n                                    <li class=\"list-social__item\">\n                                        <a href=\"https:\/\/instagram.com\/thepoetics.de\" class=\"link list-social__link\" target=\"_blank\"><svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-instagram\" viewBox=\"0 0 20 20\">\n                                            <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z\" clip-rule=\"evenodd\"><\/path>\n                                            <\/svg>\n                                            <span class=\"visually-hidden\">Instagram<\/span>\n                                        <\/a>\n                                    <\/li>\n                                {%- endif -%} \n                                {%- if arr_facebook contains product_vendor -%}\n                                    <li class=\"list-social__item\">\n                                        <a href=\"https:\/\/facebook.com\/thepoetics.de\" class=\"link list-social__link\" target=\"_blank\"><svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-facebook\" viewBox=\"0 0 20 20\">\n                                    <path fill=\"currentColor\" d=\"M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z\"><\/path>\n                                    <\/svg>\n                                    <span class=\"visually-hidden\">Facebook<\/span>\n                                        <\/a>\n                                      <\/li>\n                                {%- endif -%}\n                                {%- if arr_x contains product_vendor -%}\n                                    <li class=\"list-social__item\">\n                                        <a href=\"https:\/\/twitter.com\/thepoetics_DE\" class=\"link list-social__link\" target=\"_blank\"><span class=\"visually-hidden\">Twitter<\/span>\n                                          <svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-twitter\" viewBox=\"0 0 512 512\">\n                                            <style>svg{fill:#000000}<\/style><path d=\"M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z\"><\/path>\n                                          <\/svg>\n                                        <\/a>\n                                      <\/li>\n                                {%- endif -%}\n                            <\/ul>\n                        <\/div>\n                    <\/div>\n                    {% endcomment %}\n                    <\/div>\n                <\/div>\n                <div class=\"card__badge bottom left\"><\/div>\n              <\/div>\n          <\/div>\n        <\/div>\n      <\/li> \n    {%- endfor -%} \n    <\/ul>\n<\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 52,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_QL6Y6y",
+    "custom_liquid_wLJ4AW"
+  ]
+}

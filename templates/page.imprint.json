@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".h0 {font-weight: 700; font-size: 48px;}",
+        ".shopify-policy__title {text-align: left;}",
+        ".shopify-policy__title h1 {font-weight: 700; font-size: 48px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "custom_liquid_hRUtfp": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"section-imprint\">\n  <div class=\"container-imprint\">\n    <div class=\"imprint-title-wrapper\">\n      <h2 class=\"scroll-trigger animate--slide-in\"><strong>IMPRINT<\/strong><\/h2>\n    <\/div>\n    <div class=\"list-address-wrapper\">\n      <div class=\"address-wrapper\">\n        <p>\n          <strong>THE POETICS GMBH<\/strong><br>\n          HQ — Hasenbüelweg<br>\n          34, 6300 Zug, ZG,<br>\n        <\/p>\n      <\/div>\n      <div class=\"address-wrapper\">\n        <p>\n          <strong>THE POETICS INC.<\/strong><br>\n          US — 16192 Coastal Hwy,<br>\n          19958 Lewes, DE, USA\n        <\/p>\n      <\/div>\n      <div class=\"address-wrapper\">\n        <p>\n          <strong>THE POETICS GMBH<\/strong><br>\n          EU — Schweizer Tor 3<br>\n          78244 Gottmadingen, <br>\n          BW, Deutschland\n        <\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_hRUtfp"
+  ]
+}

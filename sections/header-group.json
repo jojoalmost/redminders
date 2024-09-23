@@ -1,0 +1,47 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "custom_liquid_JBGDPj": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 575.98px) {.desktop-alert {display: none; } .no-padding {padding-left: 0; padding-right: 0; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"shopify-section-sections--20232725332305__announcement-bar\" class=\"shopify-section shopify-section-group-header-group announcement-bar-section\"><link href=\"\/\/thepoetics.de\/cdn\/shop\/t\/5\/assets\/component-slideshow.css?v=107725913939919748051700528538\" rel=\"stylesheet\" type=\"text\/css\" media=\"all\">\n<link href=\"\/\/thepoetics.de\/cdn\/shop\/t\/5\/assets\/component-slider.css?v=114212096148022386971700528538\" rel=\"stylesheet\" type=\"text\/css\" media=\"all\">\n\n  <link href=\"\/\/thepoetics.de\/cdn\/shop\/t\/5\/assets\/component-list-social.css?v=35792976012981934991700528538\" rel=\"stylesheet\" type=\"text\/css\" media=\"all\">\n\n\n<div class=\"utility-bar color-accent-1 gradient announcement-custom\">\n  <div class=\"page-width utility-bar__grid no-padding\"><div class=\"announcement-bar\" role=\"region\" aria-label=\"Ankündigung\"><p class=\"announcement-bar__message h5\">\n            <span>Kostenloser Versand ab dem zweiten Buch!\n<span class=\"desktop-alert \">Entdecke unsere Auswahl und profitiere von der Gratis-Lieferung.<\/span><\/span><\/p><\/div><div class=\"localization-wrapper\">\n<\/div>\n  <\/div>\n<\/div>\n\n\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        "ul {text-transform: uppercase; align-items: center;}",
+        ".header {display: flex; justify-content: space-between;}",
+        ".list-menu__item {font-size: 16px; line-height: 24.48px !important; color: #fff;}",
+        "@media (max-width: 600px) {.header__heading-logo {object-fit: cover !important; } .header__heading-logo-wrapper img {width: 114px; height: 11.38px; }}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "redminders-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "none",
+        "show_line_separator": false,
+        "color_scheme": "scheme-76ee8b31-6a5d-47f1-9019-415f6d81bc8d",
+        "menu_color_scheme": "background-2",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_JBGDPj",
+    "header"
+  ]
+}

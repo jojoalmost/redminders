@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".h0 {font-weight: 700; font-size: 48px;}",
+        ".shopify-policy__title {text-align: left;}",
+        ".shopify-policy__title h1 {font-weight: 700; font-size: 48px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "custom_liquid_VqnjfJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div name=\"termly-embed\" data-id=\"d1de1f57-ac4a-4280-b95f-cb3b0d16e266\"><\/div>\n<script type=\"text\/javascript\">(function(d, s, id) {\n  var js, tjs = d.getElementsByTagName(s)[0];\n  if (d.getElementById(id)) return;\n  js = d.createElement(s); js.id = id;\n  js.src = \"https:\/\/app.termly.io\/embed-policy.min.js\";\n  tjs.parentNode.insertBefore(js, tjs);\n}(document, 'script', 'termly-jssdk'));<\/script>",
+        "color_scheme": "background-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_VqnjfJ"
+  ]
+}

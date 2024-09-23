@@ -1,0 +1,20 @@
+.jdgm-write-rev-link.jdgm-write-rev-link {
+	background-color: #181310 !important;
+}
+
+.jdgm-histogram__bar-content {
+	background-color: #ffc700 !important;
+}
+
+.jdgm-write-rev-link.jdgm-write-rev-link {
+    border-color: #181310 !important;
+	background-color: #181310 !important;
+}
+
+.jdgm-star, .jdgm-histogram .jdgm-star {
+	color: #ffc700 !important;
+}
+
+.jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown, .jdgm-sort-dropdown-arrow, .jdgm-rev__author, .jdgm-rev__icon:before{
+    color: #181310 !important;
+}

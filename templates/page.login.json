@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".h0 {font-weight: 700; font-size: 48px;}",
+        ".shopify-policy__title {text-align: left;}",
+        ".shopify-policy__title h1 {font-weight: 700; font-size: 48px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "collapsible_content_98arWg": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_hhYt9G": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_7qCyKh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_aFrXgk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_4yYqYP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_hhYt9G",
+        "collapsible_row_7qCyKh",
+        "collapsible_row_aFrXgk",
+        "collapsible_row_4yYqYP"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Hilfe & Fragen",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_98arWg"
+  ]
+}

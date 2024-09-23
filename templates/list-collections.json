@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Liste der Autoren<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_hTBPJ8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Finden Sie hier talentierte Autoren, die bereit sind, ihre einzigartigen Geschichten zu teilen<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_hTBPJ8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 32
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "custom_css": [
+        ".card__heading {padding: 15px; text-align: center;}",
+        ".collection-list{padding: 5rem 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "sort": "date_reversed",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "rich-text",
+    "main"
+  ]
+}

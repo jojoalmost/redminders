@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".h0 {font-weight: 700; font-size: 48px;}",
+        ".shopify-policy__title {text-align: left;}",
+        ".shopify-policy__title h1 {font-weight: 700; font-size: 48px;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_TgRybd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8eDTpm": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>AUTOR IM DETAIL<\/strong>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8eDTpm"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 700; font-size: 24px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 32
+      }
+    },
+    "custom_liquid_3PzRzW": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".author-image {border-radius: 50%;}",
+        ".fit-content {height: fit-content;}",
+        ".pt-0 {padding-top: 0;}",
+        ".ml-1 {margin-left: 1rem;}"
+      ],
+      "settings": {
+        "custom_liquid": "{% assign productCount = 0 %}\n{%- assign vendor_img = 'Evenfall' | append: '.png' | downcase -%}\n{% for product in collections.all.products %}\n  {% if product.vendor == 'Evenfall' %}\n    {% assign productCount = productCount | plus: 1 %}\n  {% endif %}\n{% endfor %}\n<div class=\"image-with-text image-with-text--no-overlap page-width isolate collapse-corners section-template--20802579792209__image_with_text_3TThU3-padding scroll-trigger animate--slide-in scroll-trigger--design-mode\">\n  <div class=\"image-with-text__grid grid grid--gapless grid--1-col grid--3-col-tablet\">\n    <div class=\"image-with-text__media-item image-with-text__media-item--small image-with-text__media-item--top grid__item fit-content\">\n      <div\n        class=\"image-with-text__media image-with-text__media--adapt gradient color-background-1 global-media-settings media\"\n        style=\"padding-bottom: 100.0%;\"\n      >\n        <img class=\"author-image\" src=\"{{ vendor_img | asset_url }}\">\n      <\/div>\n    <\/div>\n    <div class=\"image-with-text__text-item grid__item\">\n      <div\n        id=\"ImageWithText--template--20802579792209__image_with_text_3TThU3\"\n        class=\"image-with-text__content image-with-text__content--top pt-0 image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-1 content-container\"\n      >\n        <ul class=\"list-unstyled list-social footer__list-social\" role=\"list\"><li class=\"list-social__item\">\n            <li>\n                <a\n                    role=\"link\"\n                    aria-disabled=\"true\"\n                    class=\"product-form__submit button button--secondary\"\n                    data-shopify-editor-block=\"{&quot;id&quot;:&quot;button_UmBNLz&quot;,&quot;type&quot;:&quot;button&quot;}\"\n                    data-live-text-setting=\"section.template--20802579792209__image_with_text_3TThU3.block.button_UmBNLz.button_label\/escape\"\n                  >\n                    <strong> {{ productCount }} Bunch <\/strong>\n                  <\/a>\n            <\/li>\n            <li class=\"list-social__item\">\n                <a href=\"#\" class=\"link list-social__link ml-1\" target=\"_blank\"><svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-instagram\" viewBox=\"0 0 20 20\">\n                    <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z\" clip-rule=\"evenodd\"><\/path>\n                    <\/svg>\n                    <span class=\"visually-hidden\">Instagram<\/span>\n                <\/a>\n            <\/li>\n            <li class=\"list-social__item\">\n                <a href=\"#\" class=\"link list-social__link\" target=\"_blank\"><span class=\"visually-hidden\">Twitter<\/span>\n                  <svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-twitter\" viewBox=\"0 0 512 512\">\n                    <style>svg{fill:#000000}<\/style><path d=\"M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z\"><\/path>\n                  <\/svg>\n                <\/a>\n              <\/li>\n        <\/ul>\n        <h2\n          class=\"image-with-text__heading inline-richtext h1\"\n          data-shopify-editor-block=\"{&quot;id&quot;:&quot;heading_8bTRfT&quot;,&quot;type&quot;:&quot;heading&quot;}\"\n          data-live-text-setting=\"section.template--20802579792209__image_with_text_3TThU3.block.heading_8bTRfT.heading\"\n        >\n          <strong>Evenfall<\/strong>\n        <\/h2>\n        <div\n          class=\"image-with-text__text rte body\"\n          data-shopify-editor-block=\"{&quot;id&quot;:&quot;text_N97pbh&quot;,&quot;type&quot;:&quot;text&quot;}\"\n          data-live-text-setting=\"section.template--20802579792209__image_with_text_3TThU3.block.text_N97pbh.text\"\n        >\n          <p>\n            Geboren in einer multikulturellen Familie, hat Evenfall sich schon immer für die Widersprüche und\n            Vielschichtigkeiten in uns allen begeistert. Sie schreibt über das Gute, das Schlechte und alles dazwischen,\n            was diese Welt zu bieten hat. Sie glaubt, dass die wichtigsten Dinge in den kleinen und alltäglichen\n            Momenten des Lebens zu finden sind. Neben dem Schreiben interessiert sie sich sehr für Film, Literatur,\n            Geschichte und das Nachdenken über die kleinen und großen Rätsel des Lebens\n          <\/p>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_cfqkWf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EpFWhP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_9yKLhF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_bYhiny": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EpFWhP",
+        "text_9yKLhF",
+        "button_bYhiny"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_TgRybd",
+    "custom_liquid_3PzRzW",
+    "image_with_text_cfqkWf"
+  ]
+}
