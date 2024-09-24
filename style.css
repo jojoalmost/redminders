@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-primary {
+    @apply py-[24px] px-[72px] text-white border border-solid;
+}
+
+.btn-secondary {
+    @apply py-[24px] px-[72px] text-black border border-solid;
+}
+
+.btn-outline {
+    @apply text-white text-[18px] line-clamp-[32px]
+}
+
+.btn-icon {
+    @apply flex items-center gap-[14px]
+}
+
+.divider-vertical {
+    @apply border-l h-full m-0
+}
+
+.divider-horizontal {
+    @apply border-l w-full m-0
+}

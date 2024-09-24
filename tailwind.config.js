@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./**/*.liquid"],
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        brand: '#B72A36'
+      }
+    },
   },
   plugins: [],
 }

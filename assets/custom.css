@@ -1,3 +1,4 @@
+/*
 html{
     scroll-behavior: smooth;
 }
@@ -8,9 +9,9 @@ html{
 }
 
 .flex-item {
-  flex: 1 1 50%; /* Grow, shrink, basis - basis set to 50% to take half of the container */
-  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
-  padding: 10px; /* Optional padding for spacing */
+  flex: 1 1 50%; !* Grow, shrink, basis - basis set to 50% to take half of the container *!
+  box-sizing: border-box; !* Ensures padding and border are included in the width calculation *!
+  padding: 10px; !* Optional padding for spacing *!
 }
 
 .flex-center {
@@ -67,7 +68,7 @@ a.no-decoration {
     line-height: 32px;
 }
 
-/* Blog post Page */
+!* Blog post Page *!
 @media (max-width: 600px) {
   .container-blog-post .wrapper-content p {
     margin: 0 24px 51px;
@@ -157,9 +158,9 @@ a.no-decoration {
     height: 40px;
   }
 }
-/* End of Blog post Page */
+!* End of Blog post Page *!
 
-/* Letters Main Page */
+!* Letters Main Page *!
 .letter-tag {
   color: #000;
   background: #fff;
@@ -194,9 +195,9 @@ a.no-decoration {
   gap: 24px;
   margin-bottom: 48px;
 }
-/* End of Letters Main Page */
+!* End of Letters Main Page *!
 
-/* Contact Container */
+!* Contact Container *!
 .contact-container {
   display: flex;
   justify-content: center;
@@ -207,24 +208,24 @@ a.no-decoration {
   max-width: 1030px;
 }
 
-/* Input and Textarea Placeholder Styling */
+!* Input and Textarea Placeholder Styling *!
 input::placeholder,
 textarea::placeholder {
-    color: #000; /* Placeholder text color */
-    font-size: 18px; /* Font size for placeholder text */
+    color: #000; !* Placeholder text color *!
+    font-size: 18px; !* Font size for placeholder text *!
     line-height: 32px;
     font-family: 'Montserrat';
 }
 
-/* Input and Textarea Styling */
+!* Input and Textarea Styling *!
 input, textarea {
-    color: #000; /* Placeholder text color */
-    font-size: 18px; /* Font size for placeholder text */
+    color: #000; !* Placeholder text color *!
+    font-size: 18px; !* Font size for placeholder text *!
     line-height: 32px;
     font-family: 'Montserrat';
 }
 
-/* Header */
+!* Header *!
 .contact-header {
     display: flex;
     justify-content: space-between;
@@ -243,12 +244,12 @@ input, textarea {
 }
 
 .social-icons span {
-    font-size: 20px; /* Adjust this size for actual icons */
+    font-size: 20px; !* Adjust this size for actual icons *!
     color: #333;
     cursor: pointer;
 }
 
-/* Contact Form */
+!* Contact Form *!
 .contact-form {
     display: flex;
     flex-wrap: wrap;
@@ -296,7 +297,7 @@ input, textarea {
     background-color: #a00000;
 }
 
-/* Responsive Design */
+!* Responsive Design *!
 @media (max-width: 600px) {
     .contact-header {
         text-align: center;
@@ -311,27 +312,27 @@ input, textarea {
         width: 100%;
     }
 }
-/* End of Contact Form */
+!* End of Contact Form *!
 
-/* Strip Accordion */
+!* Strip Accordion *!
 .strip-accordion {
     width: 100%;
     margin: auto;
-    background-color: #B72A36; /* Red background for accordion */
+    background-color: #B72A36; !* Red background for accordion *!
     color: white;
-    border-top: 1px solid #fff; /* Light border */
+    border-top: 1px solid #fff; !* Light border *!
     padding-bottom: 120px;
 }
 
 .strip-accordion-item {
-    border-bottom: 1px solid #fff; /* Divider line */
+    border-bottom: 1px solid #fff; !* Divider line *!
 }
 
 .strip-accordion-header {
     width: 100%;
     padding: 28px 0 28px 48px;
     text-align: left;
-    background-color: #B72A36; /* Accordion header background */
+    background-color: #B72A36; !* Accordion header background *!
     color: white;
     cursor: pointer;
     font-size: 18px;
@@ -370,9 +371,9 @@ input, textarea {
     font-size: 16px;
     line-height: 1.6;
 }
-/* End of Strip Accordion */
+!* End of Strip Accordion *!
 
-/* Home FAQ Section */
+!* Home FAQ Section *!
 .container-home-faq {
   display: flex;
   flex-direction: column;
@@ -382,9 +383,9 @@ input, textarea {
 .wrapper-home-faq {
   width: 1030px;
 }
-/* End of Home FAQ Section */
+!* End of Home FAQ Section *!
 
-/* Legend Banner */
+!* Legend Banner *!
 .red-button {
   display: inline-block;
   color: #fff;
@@ -433,9 +434,9 @@ input, textarea {
 .subtitle-legend {
   margin: 45px 0 75px 0;
 }
-/* End of Legend Banner */
+!* End of Legend Banner *!
 
-/* Nav Tabs */
+!* Nav Tabs *!
 .container-tabs {
   display: flex;
   justify-content: center;
@@ -464,9 +465,9 @@ input, textarea {
   color: #B72A36;
 }
 
-/* FAQ Page */
+!* FAQ Page *!
 
-/* Slider Radio Button */
+!* Slider Radio Button *!
 .toggle-container {
   display: flex;
   align-items: center;
@@ -516,7 +517,7 @@ input, textarea {
 }
 
 input:checked + .slider {
-    background-color: #c70000; /* Red color for checked state */
+    background-color: #c70000; !* Red color for checked state *!
 }
 
 input:checked + .slider:before {
@@ -527,9 +528,9 @@ input:checked + .slider:before {
     color: #333;
     font-size: 18px;
 }
-/* End of Slider Radio Button */
+!* End of Slider Radio Button *!
 
-/* Sidebar Styling */
+!* Sidebar Styling *!
 #newsletters .section-paragraph {
   margin: 58px 0 0 0;
 }
@@ -688,9 +689,9 @@ input:checked + .slider:before {
 .faq-item.active .faq-content {
     display: block;
 }
-/* End of FAQ Page */
+!* End of FAQ Page *!
 
-/* Legal Page */
+!* Legal Page *!
 .wrapper-legal-card {
   width: fit-content;
   display: grid;
@@ -741,9 +742,9 @@ input:checked + .slider:before {
   height: 1px;
   background-color: #000
 }
-/* End of Legal Page */
+!* End of Legal Page *!
 
-/* Tab content styles */
+!* Tab content styles *!
 .container-tabs .tab-content {
   display: none;
   padding: 20px;
@@ -753,9 +754,9 @@ input:checked + .slider:before {
 .tab-content.active {
   display: block;
 }
-/* End of Nav Tabs */
+!* End of Nav Tabs *!
 
-/* Blogs */
+!* Blogs *!
 .container-blogs {
   display: flex;
   justify-content: center;
@@ -810,9 +811,9 @@ input:checked + .slider:before {
   font-weight: 700;
   border: 1px solid #000;
 }
-/* End of Blogs */
+!* End of Blogs *!
 
-/* Imprint */
+!* Imprint *!
 .imprint-title-wrapper h2 {
   font-size: 40px;
   line-height: 56px;
@@ -853,7 +854,7 @@ input:checked + .slider:before {
   align-items: center;
   height: 213px;
 }
-/* End of Imprint */
+!* End of Imprint *!
 
 .header__heading-link {
   padding: 0;
@@ -1072,7 +1073,7 @@ h2.banner-caption-title, .banner-caption-text {
 }
 
 @media (max-width: 600px) {
-  /* Accordion */
+  !* Accordion *!
   .accordion-container {
     max-width: 300px;
     margin: 0 auto;
@@ -1101,9 +1102,9 @@ h2.banner-caption-title, .banner-caption-text {
       display: inline-block;
       width: 12px;
       height: 12px;
-      border-right: 3px solid white;  /* Adjust thickness and color */
-      border-bottom: 3px solid white; /* Adjust thickness and color */
-      transform: rotate(45deg);  /* Initial rotation to create the downward arrow */
+      border-right: 3px solid white;  !* Adjust thickness and color *!
+      border-bottom: 3px solid white; !* Adjust thickness and color *!
+      transform: rotate(45deg);  !* Initial rotation to create the downward arrow *!
       transition: transform 0.3s ease-out;
   }
   
@@ -1127,15 +1128,15 @@ h2.banner-caption-title, .banner-caption-text {
   }
   
   .accordion-item.active .accordion-content {
-      max-height: 200px; /* Adjust based on content */
+      max-height: 200px; !* Adjust based on content *!
       padding: 24px 0 0 0;
   }
   
   .accordion-item.active .accordion-icon {
-      transform: rotate(-135deg); /* Rotate to point upwards */
+      transform: rotate(-135deg); !* Rotate to point upwards *!
   }
 
-  /* End of Accordion */
+  !* End of Accordion *!
   
   .section-template--22472520958289__custom_liquid_get7gQ-padding {
     padding: 0 !important;
@@ -1252,7 +1253,7 @@ h2.banner-caption-title, .banner-caption-text {
     column-gap: 5px;
   }
 
-  /* Quotes Section App */
+  !* Quotes Section App *!
   .quotes-header h2 {
     font-size: 16px !important;
     line-height: 28px !important;
@@ -1282,7 +1283,7 @@ h2.banner-caption-title, .banner-caption-text {
   .quotes-carousel {
     max-width: 408px !important;
   }
-  /* End of Quotes Section App */
+  !* End of Quotes Section App *!
 
   #shopify-section-template--20232729624913__custom_liquid_qctLyQ .banner-caption-container,
   #shopify-section-template--22299743682897__custom_liquid_6PHdk9 .banner-caption-container {
@@ -1326,7 +1327,7 @@ h2.banner-caption-title, .banner-caption-text {
     text-align: center !important;
   }
 
-  /* Categories Section App */
+  !* Categories Section App *!
   .categories-title h2 {
     font-size: 24px !important;
     line-height: 28.8px !important;
@@ -1360,9 +1361,9 @@ h2.banner-caption-title, .banner-caption-text {
   .categories-content.d-sm-block {
     display: flex !important;
   }
-  /* End of Categories Section App */
+  !* End of Categories Section App *!
 
-  /* Topics Section App */
+  !* Topics Section App *!
   #shopify-section-template--20232729624913__custom_liquid_KY3iri h2,
   #shopify-section-template--22299743682897__custom_liquid_VJr8cn h2 {
     font-size: 24px;
@@ -1396,9 +1397,9 @@ h2.banner-caption-title, .banner-caption-text {
     padding-top: 80px;
     padding-bottom: 0;
   }
-  /* End of Topics Section App */
+  !* End of Topics Section App *!
 
-  /* Widget Section App */
+  !* Widget Section App *!
   #shopify-section-template--20232729624913__custom_liquid_BAznbG h2,
   #shopify-section-template--22299743682897__custom_liquid_kiEcnB h2 {
     font-size: 24px !important;
@@ -1429,9 +1430,9 @@ h2.banner-caption-title, .banner-caption-text {
     width: 325.1px !important;
     height: 141.25px !important;
   }
-  /* End of Widget Section App */
+  !* End of Widget Section App *!
 
-  /* Reminders Section App */
+  !* Reminders Section App *!
   #shopify-section-template--20232729624913__custom_liquid_geVNfx .banner-image-container,
   #shopify-section-template--22299743682897__custom_liquid_bXE7B4 .banner-image-container {
     order: 2;
@@ -1459,9 +1460,9 @@ h2.banner-caption-title, .banner-caption-text {
     width: 274px;
     height: 482.85px;
   }
-  /* End of Reminders Section App */
+  !* End of Reminders Section App *!
 
-  /* Background Section App */
+  !* Background Section App *!
   #shopify-section-template--20232729624913__custom_liquid_niHrhq h2,
   #shopify-section-template--22299743682897__custom_liquid_QccpMp h2 {
     font-size: 24px !important;
@@ -1494,9 +1495,9 @@ h2.banner-caption-title, .banner-caption-text {
     flex-direction: column-reverse;
     width: 370px !important;
   }
-  /* End of Background Section App */
+  !* End of Background Section App *!
 
-  /* Theme Section App */
+  !* Theme Section App *!
   .scroll-container::-webkit-scrollbar-thumb,
   .scroll-container::-webkit-scrollbar-track {
     margin-top: 20px !important;
@@ -1546,9 +1547,9 @@ h2.banner-caption-title, .banner-caption-text {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
   }
-  /* End of Theme Section App */
+  !* End of Theme Section App *!
 
-  /* Footer */
+  !* Footer *!
   .brand-wrapper p {
     margin: 3.71px 0 0 0;
     font-weight: 400;
@@ -1645,7 +1646,7 @@ h2.banner-caption-title, .banner-caption-text {
   .nav-item.app, .nav-item.other {
     margin-right: 0 !important;
   }
-  /* End of Footer */
+  !* End of Footer *!
   
   .banner-screenshot-wrapper {
       display: flex;
@@ -1688,7 +1689,7 @@ h2.banner-caption-title, .banner-caption-text {
   text-transform: uppercase;
 }
 
-/* @media only screen and (min-width: 390px) and (max-width: 430px) {
+!* @media only screen and (min-width: 390px) and (max-width: 430px) {
     #shopify-section-template--20232729624913__custom_liquid_E8mcPE .banner-image-container {
       height: 80vh !important;
     }
@@ -1697,9 +1698,9 @@ h2.banner-caption-title, .banner-caption-text {
       left: -58px;
       top: 148px !important;
     }
-} */
+} *!
 
-/* Carousel Quotes */
+!* Carousel Quotes *!
 .quotes-carousel {
   position: relative;
   width: 100%;
@@ -1764,9 +1765,9 @@ h2.banner-caption-title, .banner-caption-text {
 .dot-quote.active {
   background-color: #fff;
 }
-/* End of Carousel Quotes */
+!* End of Carousel Quotes *!
 
-/* Carousel */
+!* Carousel *!
 
 .red-de .review-button-container {
   padding: 12px 43px;
@@ -1865,13 +1866,13 @@ h2.banner-caption-title, .banner-caption-text {
   background-color: #000;
 }
 
-/* Mobile-specific styles */
+!* Mobile-specific styles *!
 @media (max-width: 600px) {
   .carousel {
     max-width: 100%;
   }
 }
-/* End of Carousel */
+!* End of Carousel *!
 
 @media only screen and (min-width: 320px) {
   .text-information.copyright {
@@ -1885,7 +1886,7 @@ h2.banner-caption-title, .banner-caption-text {
   }
 }
 
-/* Large Mobile Style */
+!* Large Mobile Style *!
 @media only screen and (min-width: 420px) and (max-width: 580px) {
     .red-de .quotes-content h1 {
         font-size: 12px !important;
@@ -1967,9 +1968,9 @@ h2.banner-caption-title, .banner-caption-text {
       line-height: 28px !important;
     }
 }
-/* End of Large Mobile Style */
+!* End of Large Mobile Style *!
 
-/* Regular Mobile Style */
+!* Regular Mobile Style *!
 @media only screen and (min-width: 370px) and (max-width: 419px) {
     #shopify-section-template--20232729624913__custom_liquid_E8mcPE .banner-image-container, #shopify-section-template--22299743682897__custom_liquid_mkwwpm .banner-image-container {
         background-color: #B72A36;
@@ -2082,10 +2083,10 @@ h2.banner-caption-title, .banner-caption-text {
         line-height: 28px !important;
     }
 
-    /* .quotes-content h1 {
+    !* .quotes-content h1 {
         font-size: 16px !important;
         line-height: 28px !important;
-    } */
+    } *!
 
     #shopify-section-template--20232729624913__custom_liquid_qctLyQ p,
     .categories-text p,
@@ -2245,7 +2246,7 @@ h2.banner-caption-title, .banner-caption-text {
     }
 }
 
-/* Small Mobile Style */
+!* Small Mobile Style *!
 @media only screen and (min-width: 320px) and (max-width: 374px) {
     .red-de .banner-caption-subtitle {
         margin: 0;
@@ -2615,9 +2616,9 @@ h2.banner-caption-title, .banner-caption-text {
       margin-bottom: 58.3px !important;
     }
 }
-/* End of Small Mobile Style */
+!* End of Small Mobile Style *!
 
-/* Quotes Section App */
+!* Quotes Section App *!
 .container-quotes, .container-widget, container-categories{
   display: flex;
   flex-direction: column;
@@ -2703,9 +2704,9 @@ i.share-icon {
     justify-content: start;
     column-gap: 12px;
 }
-/* End of Quotes Section App */
+!* End of Quotes Section App *!
 
-/* Widget Section App */
+!* Widget Section App *!
 .widget-title, .widget-text,
 .categories-title, .categories-text{
   text-align: center;
@@ -2758,9 +2759,9 @@ i.share-icon {
   line-height: 32px;
   margin: 0 0 42px 0;
 }
-/* End of Widget Section App */
+!* End of Widget Section App *!
 
-/* Categories Section App */
+!* Categories Section App *!
 .container-categories {
   padding: 77px 0;
 }
@@ -2798,9 +2799,9 @@ i.share-icon {
     opacity: 40%;
 }
 
-/* End of Categories Section App */
+!* End of Categories Section App *!
 
-/* Background Section */
+!* Background Section *!
 .backgrounds-section {
     display: flex;
     justify-content: center;
@@ -2848,9 +2849,9 @@ i.share-icon {
   width: 733px;
   margin: 0;
 }
-/* End of Background Section */
+!* End of Background Section *!
 
-/* Theme Section App */
+!* Theme Section App *!
 .container-theme {
   display: flex;
   justify-content: center;
@@ -2924,9 +2925,9 @@ i.share-icon {
     height: auto;
     border-radius: 20px;
 }
-/* End of Theme Section App */
+!* End of Theme Section App *!
 
-/* Footer Section */
+!* Footer Section *!
 .container-footer {
   padding: 72.07px 0 28px 0;
 }
@@ -3055,7 +3056,7 @@ hr.hr-thin {
   margin: 0;
   text-align: center;
 }
-/* End of Footer Section */
+!* End of Footer Section *!
 
 sticky-header.gradient {
   background: #B72A36;
@@ -3329,4 +3330,4 @@ body{
   --product-card-corner-radius: 0px;
   --border-radius: 0px;
   --collection-card-corner-radius: 0px;
-}
+}*/
