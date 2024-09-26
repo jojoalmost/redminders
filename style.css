@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply py-[24px] px-[72px] text-white border border-solid;
+    @apply p-[24px] text-white border border-solid;
 }
 
 .btn-secondary {
-    @apply py-[24px] px-[72px] text-black border border-solid;
+    @apply p-[24px] text-black border border-solid;
+}
+
+.btn-tertiary {
+    @apply p-[24px] text-brand border border-solid bg-white;
 }
 
 .btn-outline {
@@ -24,4 +28,8 @@
 
 .divider-horizontal {
     @apply border-l w-full m-0
+}
+
+.input-big {
+
 }
