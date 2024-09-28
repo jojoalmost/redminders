@@ -39,11 +39,11 @@ footer ul li {
 }
 
 input.input, textarea.input {
-    @apply h-[88px] bg-brand-300 px-[24px] py-[28px] w-full
+    @apply h-[72px] text-[14px] leading-[24px] sm:text-[18px] sm:leading-[32px] sm:h-[88px] bg-brand-300 px-[24px] py-[24px] sm:py-[28px] w-full font-bold sm:font-normal
 }
 
 input.input::placeholder, textarea.input::placeholder {
-    @apply text-black
+    @apply text-black font-normal
 }
 
 textarea.input {
@@ -51,19 +51,23 @@ textarea.input {
 }
 
 .strip-accordion-header {
-    @apply items-center py-[28px] px-[48px] border-t border-b border-white flex justify-between text-[18px] uppercase font-bold
+    @apply items-center py-[20px] sm:py-[28px] px-0 sm:px-[48px] border-t border-white flex justify-between sm:text-[18px] text-[16px] uppercase font-bold leading-[32px] cursor-pointer
+}
+
+.strip-accordion-item:last-of-type .strip-accordion-header, .strip-accordion-item:last-of-type .strip-accordion-content {
+    @apply border-b
 }
 
 .strip-accordion-item.active .strip-accordion-header {
-    @apply border-b-0
+    @apply border-b-0 pb-[16px] sm:pb-[48px]
 }
 
 .strip-accordion-item.active .strip-accordion-content {
-    @apply h-auto flex
+    @apply h-auto opacity-100 pb-[41px] sm:pb-[24px] px-0 sm:px-[48px]
 }
 
 .strip-accordion-content {
-    @apply pb-[24px] px-[48px] h-0 overflow-hidden hidden
+    @apply leading-[24px] sm:leading-[32px] text-[14px] sm:text-[18px] h-0 overflow-hidden opacity-0 transition-all ease-out duration-300
 }
 
 .strip-accordion-item.active .strip-accordion-icon {

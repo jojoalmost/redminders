@@ -268,7 +268,7 @@
         onload="this.media='all'"
       >
     {%- endif -%}
-    
+
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
@@ -285,7 +285,7 @@
     })(window,document,'script','dataLayer','GTM-T2SGTKD4');
     </script>
     <!-- End Google Tag Manager -->
-  
+
   <script>
   // fetch('https://ipinfo.io/json?token=c6785134fec675')
   //   .then(response => response.json())
@@ -381,41 +381,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
       const carousel = document.querySelector('.carousel-inner');
       const dots = document.querySelectorAll('.dot');
-      
+
       if (carousel && dots.length > 0) {
         let index = 0;
         let startX = 0;
         let isDragging = false;
-      
+
         function updateCarousel() {
           carousel.style.transform = `translateX(${-index * 100}%)`;
           dots.forEach(dot => dot.classList.remove('active'));
           dots[index].classList.add('active');
         }
-      
+
         dots.forEach((dot, i) => {
           dot.addEventListener('click', () => {
             index = i;
             updateCarousel();
           });
         });
-      
+
         function autoSlide() {
           index = (index + 1) % dots.length;
           updateCarousel();
         }
-      
+
         // Touch event handlers for swipe
         carousel.addEventListener('touchstart', (e) => {
           startX = e.touches[0].clientX;
           isDragging = true;
         });
-      
+
         carousel.addEventListener('touchmove', (e) => {
           if (isDragging) {
             const currentX = e.touches[0].clientX;
             const diffX = startX - currentX;
-      
+
             if (diffX > 50) {
               index = (index + 1) % dots.length; // Swipe left
               updateCarousel();
@@ -427,7 +427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
           }
         });
-      
+
         carousel.addEventListener('touchend', () => {
           isDragging = false;
         });
@@ -436,36 +436,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
       const carouselQuote = document.querySelector('.quotes-carousel-inner');
       const dotsQuote = document.querySelectorAll('.dot-quote');
-      
+
       if (carouselQuote && dotsQuote.length > 0) {
         let index = 0;
         let startX = 0;
         let isDragging = false;
-      
+
         function updateCarousel() {
           carouselQuote.style.transform = `translateX(${-index * 100}%)`;
           dotsQuote.forEach(dot => dot.classList.remove('active'));
           dotsQuote[index].classList.add('active');
         }
-      
+
         dotsQuote.forEach((dot, i) => {
           dot.addEventListener('click', () => {
             index = i;
             updateCarousel();
           });
         });
-      
+
         // Touch event handlers for swipe
         carouselQuote.addEventListener('touchstart', (e) => {
           startX = e.touches[0].clientX;
           isDragging = true;
         });
-      
+
         carouselQuote.addEventListener('touchmove', (e) => {
           if (isDragging) {
             const currentX = e.touches[0].clientX;
             const diffX = startX - currentX;
-      
+
             if (diffX > 50) { // Swipe left
               index = (index + 1) % dotsQuote.length; // Ensure it loops to the start
               updateCarousel();
@@ -477,7 +477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
           }
         });
-      
+
         carouselQuote.addEventListener('touchend', () => {
           isDragging = false;
         });
@@ -511,19 +511,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
-    
+
         // Hide all tab content
         tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
-    
+
         // Remove active class from all tab items
         tablinks = document.getElementsByClassName("nav-item");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-    
+
         // Show the current tab and add an active class to the clicked tab item
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";

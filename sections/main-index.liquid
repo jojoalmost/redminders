@@ -17,8 +17,8 @@
       </div>
       <div class="flex flex-col gap-[32px] pt-[56px] md:pt-0">
         <div class="flex md:hidden gap-[16px]">
-          <button class="btn-tertiary flex-1">Affirmation</button>
-          <button class="btn-tertiary flex-1">Motivation</button>
+          <button class="btn-tertiary flex-1 font-bold">Affirmation</button>
+          <button class="btn-tertiary flex-1 font-bold">Motivation</button>
         </div>
         <button class="btn-primary w-full md:max-w-[229px]">See Detail</button>
       </div>
@@ -54,17 +54,24 @@
       <div class="hidden md:flex">
         <hr aria-orientation="vertical" class="border-l border-solid border-black h-full m-0">
       </div>
-      <div class="md:flex-1 relative justify-center items-center flex pt-[39.21px] md:pt-0">
-        <image
-          src="https://cdn.shopify.com/s/files/1/0784/5661/9345/files/EN_-_Home.png?v=1721386888"
-          class="w-[233.92px] md:w-[333.45px]"
-          loading="lazy"
-        ></image>
-        <image
-          src="https://cdn.shopify.com/s/files/1/0784/5661/9345/files/notification-app.png?v=1721388885"
-          class="w-[334.67px] md:w-[491.33px] absolute top-[176px] md:top-[280px]"
-          loading="lazy"
-        ></image>
+      <div class="md:flex-1 flex-col justify-center items-center flex pt-[39.21px] md:pt-0">
+        <div class="relative flex">
+          <image
+            src="https://cdn.shopify.com/s/files/1/0784/5661/9345/files/EN_-_Home.png?v=1721386888"
+            class="w-[233.92px] md:w-[333.45px]"
+            loading="lazy"
+          ></image>
+          <image
+            src="https://cdn.shopify.com/s/files/1/0784/5661/9345/files/notification-app.png?v=1721388885"
+            class="w-[334.67px] md:w-[491.33px] absolute top-[176px] md:top-[280px]"
+            loading="lazy"
+          ></image>
+        </div>
+        <div class="flex gap-[16px] pt-[23px] pb-[23px] md:pb-0 md:pt-[32.7px]">
+          {% for i in (1..5) %}
+            <div class="w-[10px] h-[10px] bg-brand flex-1 !block rounded-full cursor-pointer"></div>
+          {% endfor %}
+        </div>
       </div>
       <div class="flex md:hidden gap-[15.41px]">
         <a href="http://redminde.rs/app-apple">
@@ -86,92 +93,110 @@
   </div>
 
   <div id="home-banner-3" class="bg-brand flex flex-col justify-center items-center min-h-[700px]">
-    <div class="container max-w-[1269px] flex-col flex gap-[143px]  justify-center items-center">
-      <div class="flex items-center flex-col gap-[15px]">
-        <h4 class="text-white font-semibold text-[24px] leading-[28px]">Facing Challenges</h4>
-        <h4 class="text-white font-medium text-[16px] uppercase leading-[24.48px]">Affirmation</h4>
+    <div class="container max-w-[1269px] flex-col flex gap-[112px] sm:gap-[143px]  justify-center items-center">
+      <div class="flex items-center flex-col gap-0 sm:gap-[15px]">
+        <h4 class="text-white font-bold sm:font-semibold text-[16px] sm:text-[24px] leading-[28px]">
+          Facing Challenges
+        </h4>
+        <h4 class="text-white font-normal sm:font-medium text-[14px] sm:text-[16px] normal-case sm:uppercase leading-[24.48px]">
+          Affirmation
+        </h4>
       </div>
-      <h2 class="text-white max-w-[1075px] text-center font-bold text-[40px] leading-[61.2px]">
+      <h2 class="text-white max-w-[316px] sm:max-w-[1075px] text-center font-bold text-[24px] sm:text-[40px] leading-[32px] sm:leading-[61.2px] uppercase">
         Never be afraid of something good, but you may gain something even better.
       </h2>
       <div class="flex gap-[32px]">
-        <button class="btn-outline btn-icon">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M27.5007 5C32.5633 5 36.6673 9.16667 36.6673 15C36.6673 26.6667 24.1673 33.3333 20.0007 35.8333C15.834 33.3333 3.33398 26.6667 3.33398 15C3.33398 9.16667 7.50065 5 12.5007 5C15.6006 5 18.334 6.66667 20.0007 8.33333C21.6673 6.66667 24.4007 5 27.5007 5ZM21.5571 31.0063C23.0265 30.0808 24.3507 29.1592 25.5922 28.1715C30.5568 24.2217 33.334 19.9058 33.334 15C33.334 11.0679 30.7723 8.33333 27.5007 8.33333C25.7075 8.33333 23.7661 9.28185 22.3577 10.6904L20.0007 13.0474L17.6437 10.6904C16.2351 9.28185 14.2938 8.33333 12.5007 8.33333C9.26575 8.33333 6.66732 11.0942 6.66732 15C6.66732 19.9058 9.44443 24.2217 14.4092 28.1715C15.6507 29.1592 16.9748 30.0808 18.4442 31.0063C18.9417 31.3198 19.4358 31.6215 20.0007 31.9587C20.5655 31.6215 21.0597 31.3198 21.5571 31.0063Z"
-                  fill="white" />
-          </svg>
+        <button class="btn-outline btn-icon !text-[14px] sm:text-[18px]">
+          <img
+            src="{{ 'like.svg' | asset_url }}"
+            class="w-[24px]] h-[24px] sm:w-[40px] sm:h-[40px]"
+            alt="like"
+          >
           <span>
             <span class="font-extrabold">11k</span>
             Likes
           </span>
         </button>
         <div>
-          <hr class="divider-vertical border-l-white h-[40px]">
+          <hr class="divider-vertical border-l-white h-[32px] sm:h-[40px]">
         </div>
-        <button class="btn-outline btn-icon">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21.6667 23.3334H18.3333C12.57 23.3334 7.56588 26.5837 5.05398 31.3512C5.01822 30.9056 5 30.4549 5 30.0001C5 20.7954 12.4619 13.3334 21.6667 13.3334V4.16675L39.1667 18.3334L21.6667 32.5001V23.3334ZM18.3333 20.0001H25V25.5131L33.869 18.3334L25 11.1538V16.6667H21.6667C17.6325 16.6667 14.0169 18.4582 11.5719 21.2892C13.6812 20.4524 15.9674 20.0001 18.3333 20.0001Z"
-                  fill="white" />
-          </svg>
+        <button class="btn-outline btn-icon !text-[14px] sm:text-[18px]">
+          <img
+            src="{{ 'share.svg' | asset_url }}"
+            class="w-[24px]] h-[24px] sm:w-[40px] sm:h-[40px]"
+            alt="share"
+          >
           Share
         </button>
       </div>
     </div>
   </div>
 
-  <div id="home-letters" class="bg-white flex flex-col justify-center items-center min-h-[993px]">
-    <div class="container max-w-[1269px] flex-col flex justify-center gap-[48px]">
+  <div id="home-letters" class="bg-white flex flex-col justify-center items-center min-h-[741px] sm:min-h-[993px]">
+    <div class="container max-w-[1269px] flex-col flex justify-center gap-[24px] sm:gap-[48px] px-[24px] sm:px-0">
       <div class="flex justify-center">
-        <h3 class="font-bold leading-[56px] text-[40px] uppercase">Letters</h3>
+        <h3 class="font-bold leading-[56px] text-[40px] uppercase hidden sm:flex">Letters</h3>
+        <h3 class="font-bold leading-[28.8px] text-[24px] uppercase flex sm:hidden">Letter</h3>
       </div>
-      <div class="grid md:grid-cols-3 gap-[24px]">
-        <div
-          class="relative h-[465px] bg-no-repeat bg-center bg-cover"
-          style="background-image: url('https://cdn.shopify.com/s/files/1/0784/5661/9345/files/1.png?v=1727187166')"
-        >
-          <div class="absolute p-[11px] bg-white min-w-[200px] uppercase text-[18px] leading-[32px] text-center">
-            Guides
-          </div>
-          <div class="absolute bottom-0 bg-brand p-[24px] text-white text-[18px] leading-[32px] font-bold">
-            5 signs that you're not right for each other anymore/you've grown apart
-          </div>
-        </div>
-        <div
-          class="relative h-[465px] bg-no-repeat bg-center bg-cover"
-          style="background-image: url('https://cdn.shopify.com/s/files/1/0784/5661/9345/files/3.png?v=1727187164')"
-        >
-          <div class="absolute p-[11px] bg-white min-w-[200px] uppercase text-[18px] leading-[32px] text-center">
-            Guides
-          </div>
-          <div class="absolute bottom-0 bg-brand p-[24px] text-white text-[18px] leading-[32px] font-bold">
-            5 signs that you're not right for each other anymore/you've grown apart
-          </div>
-        </div>
-        <div
-          class="relative h-[465px] bg-no-repeat bg-center bg-cover"
-          style="background-image: url('https://cdn.shopify.com/s/files/1/0784/5661/9345/files/2.png?v=1727187164')"
-        >
-          <div class="absolute p-[11px] bg-white min-w-[200px] uppercase text-[18px] leading-[32px] text-center">
-            Guides
-          </div>
-          <div class="absolute bottom-0 bg-brand p-[24px] text-white text-[18px] leading-[32px] font-bold">
-            5 signs that you're not right for each other anymore/you've grown apart
-          </div>
-        </div>
+      {% assign letters = 'https://cdn.shopify.com/s/files/1/0784/5661/9345/files/1.png?v=1727187166, https://cdn.shopify.com/s/files/1/0784/5661/9345/files/3.png?v=1727187164, https://cdn.shopify.com/s/files/1/0784/5661/9345/files/2.png?v=1727187164'
+        | split: ', '
+      %}
+
+      <div class="hidden sm:grid md:grid-cols-3 gap-[24px] ">
+        {% for letter in letters -%}
+          {%- if forloop.length > 0 -%}
+            <div>
+              <div
+                class="relative h-[320px] bg-no-repeat bg-center bg-cover"
+                style="background-image: url('{{ letter }}')"
+              >
+                <div class="absolute p-[11px] bg-white min-w-[200px] uppercase text-[18px] leading-[32px] text-center">
+                  Guides
+                </div>
+              </div>
+              <div class="bg-brand p-[24px] text-white text-[18px] leading-[32px] font-bold">
+                5 signs that you're not right for each other anymore/you've grown apart
+              </div>
+            </div>
+          {%- endif -%}
+        {% endfor %}
       </div>
+
+      <div class="grid sm:hidden md:grid-cols-3 gap-[24px] ">
+        {% for letter in letters limit: 1 -%}
+          {%- if forloop.length > 0 -%}
+            <div>
+              <div
+                class="relative h-[308px] bg-no-repeat bg-center bg-cover"
+                style="background-image: url('{{ letter }}')"
+              >
+                <div class="absolute p-[11px] bg-white min-w-[200px] uppercase text-[18px] leading-[32px] text-center">
+                  Guides
+                </div>
+              </div>
+              <div class="bg-brand px-[16px] py-[24px] text-white text-[16px]  leading-[24px] sm:leading-[32px] font-bold uppercase">
+                5 signs that you're not right for each other anymore/you've grown apart
+              </div>
+            </div>
+          {%- endif -%}
+        {% endfor %}
+      </div>
+
       <div class="flex justify-center">
         <button class="btn-secondary border-black min-w-[210px]">See All</button>
       </div>
     </div>
   </div>
 
-  <div id="home-faq" class="bg-brand flex flex-col justify-center items-center min-h-[997px]">
-    <div class="container max-w-[1030px] text-white">
-      <div class="flex items-center justify-between mb-[56px]">
-        <div class="flex-1 max-w-[404px]">
-          <h2 class="font-bold text-[40px] leading-[58px] text-white">Frequently asked Questions</h2>
+  <div id="home-faq" class="bg-brand flex flex-col justify-center items-center py-[80px] sm:py-[120px]">
+    <div class="container max-w-[1030px] text-white px-[24px] sm:px-0">
+      <div class="flex flex-col sm:flex-row items-center justify-between mb-[40px] sm:mb-[56px] text-center sm:text-left gap-[32px] sm:gap-0">
+        <div class="flex-1 max-w-[254px] sm:max-w-[416px]">
+          <h2 class="font-bold text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[56px] text-white uppercase">
+            Frequently asked Questions
+          </h2>
         </div>
-        <div class="flex-1 text-[18px] max-w-[392px]">
+        <div class="flex-1 text-[14px] sm:text-[18px] max-w-[392px] leading-[24px] sm:leading-[32px]">
           <p>Lorem ipsum dolor sit amet consectetur. Diam est massa purus adipiscing a justo.</p>
         </div>
       </div>
@@ -199,13 +224,13 @@
     <div class="container max-w-[1030px] flex-col flex px-[20px] py-[80px] sm:px-0 sm:py-0">
       <div class="flex pb-[59px] items-center flex-col sm:flex-row">
         <div class="flex-1">
-          <h2 class="font-bold text-[40px] leading-[56px] uppercase">Contact Us</h2>
+          <h2 class="font-bold text-[24px] sm:text-[40px] leading-[56px] sm:leading-[28.8px] uppercase">Contact Us</h2>
         </div>
-        <div class="flex-1 max-w-[398px]">
-          <p class="text-black text-[16px] leading-[28px]">
+        <div class="flex-1 max-w-[398px] text-center sm:text-left">
+          <p class="text-black text-[14px] sm:text-[16px] leading-[24px] sm:leading-[28px]">
             Lorem ipsum dolor sit amet consectetur. Diam est massa purus adipiscing a justo scelerisque
           </p>
-          <div class="flex gap-[16px] items-center pt-[35px]">
+          <div class="flex justify-center sm:justify-start gap-[16px] items-center pt-[35px]">
             <a href="">
               <svg
                 width="20"
@@ -317,12 +342,16 @@
         <div class="flex gap-[24px]">
           <div class="flex-1">
             <label for="message"> </label>
-            <textarea id="message" class="input" placeholder="Message"></textarea>
+            <textarea
+              id="message"
+              class="input !min-h-[300px] sm:!min-h-[200px]"
+              placeholder="Message"
+            ></textarea>
           </div>
         </div>
       </div>
       <div class="flex justify-center">
-        <button class="btn-primary !bg-brand">Send</button>
+        <button class="btn-primary !bg-brand !min-w-full sm:!min-w-[188px]">Send</button>
       </div>
     </div>
   </div>
@@ -354,7 +383,7 @@
         <h4 class="text-white leading-[32.67px] text-[15.75px]">IMPRINT OF THE POETICS GMBH</h4>
       </div>
 
-      <div class="flex max-sm:flex-col justify-between mt-[46.87px]">
+      <div id="menu-footer-desktop" class="sm:flex max-sm:flex-col justify-between mt-[46.87px] hidden">
         <div class="flex flex-col gap-[24px]">
           <h3 class="title">App</h3>
           <ul class="flex flex-col gap-[20px]">
@@ -417,6 +446,21 @@
             <li><a href="">Terms</a></li>
             <li><a href="">EULA</a></li>
           </ul>
+        </div>
+      </div>
+
+      <div id="menu-footer-mobile" class="flex items-center sm:hidden flex-col gap-[40px] my-[56px]">
+        <div class="flex items-center gap-[8px]">
+          <h3 class="text-white uppercase font-bold text-[16px] leading-[28px]">App</h3>
+          <div class="w-[24px] h-[24px] flex">
+            {% render 'icon-caret' %}
+          </div>
+        </div>
+        <div class="flex items-center gap-[8px]">
+          <h3 class="text-white uppercase font-bold text-[16px] leading-[28px]">Other</h3>
+          <div class="w-[24px] h-[24px] flex">
+            {% render 'icon-caret' %}
+          </div>
         </div>
       </div>
 
