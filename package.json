@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "shopify theme dev",
     "tw": "npx tailwindcss -i ./style.css -o ./assets/theme.css --watch",
     "build": "npx tailwindcss -i ./style.css -o ./assets/theme.css --minify",
     "prettier": "prettier"

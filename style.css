@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply p-[24px] text-white border border-solid;
+    @apply p-[24px] text-white border border-solid min-w-[188px];
 }
 
 .btn-secondary {
@@ -30,6 +30,46 @@
     @apply border-l w-full m-0
 }
 
-.input-big {
+footer .title {
+    @apply text-white font-bold leading-[28px] uppercase m-0 text-[24px]
+}
 
+footer ul li {
+    @apply leading-[19.5px]
+}
+
+input.input, textarea.input {
+    @apply h-[88px] bg-brand-300 px-[24px] py-[28px] w-full
+}
+
+input.input::placeholder, textarea.input::placeholder {
+    @apply text-black
+}
+
+textarea.input {
+    @apply min-h-[200px]
+}
+
+.strip-accordion-header {
+    @apply items-center py-[28px] px-[48px] border-t border-b border-white flex justify-between text-[18px] uppercase font-bold
+}
+
+.strip-accordion-item.active .strip-accordion-header {
+    @apply border-b-0
+}
+
+.strip-accordion-item.active .strip-accordion-content {
+    @apply h-auto flex
+}
+
+.strip-accordion-content {
+    @apply pb-[24px] px-[48px] h-0 overflow-hidden hidden
+}
+
+.strip-accordion-item.active .strip-accordion-icon {
+    @apply after:content-['-']
+}
+
+.strip-accordion-icon {
+    @apply text-[32px] after:content-['+'] font-normal transition-transform
 }
